@@ -1,0 +1,34 @@
+.corps {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.corps > *{
+  flex: 80%;
+}
+
+@media (min-width: 600px){
+  .aside {
+    flex: 1 auto;
+  }
+}
+
+@media (min-width:800px){
+  .main{
+    flex: 20 0px;
+  }
+
+  .aside{
+    order: 1;
+  }
+
+  .main {
+    order: 2;
+  }
+
+  .footer{
+    order: 3;
+  }
+}

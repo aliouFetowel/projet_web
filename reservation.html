@@ -4,9 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <title>Un formulaire</title>
+    	<link rel="stylesheet" href="menuPied.css" />  
 </head>
 
 <body>
+  <header> <h1>Bienvenue à l'Hôtel Diallo</h1>
+    <nav>
+      <ul class="menu" role="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="hebergement.html">Hébergements</a></li>
+      <li><a href="loisirs.html">Loisirs</a></li>
+      <li><a href="restaurant.html">Restaurants</a></li>
+      <li><a href="evenement.html">Evénements</a></li>
+      <li><a href="promotion.html">Promotions</a></li>
+      <li><a href=#>Reservation</a></li>
+      </ul>
+      </nav>
+  </header>
 	 <form id="myForm">
 
         <label class="form_col" for="lastName">Nom :</label>
@@ -34,7 +48,7 @@
         <span class="tooltip">Format de la date de naissance jj/mm/aaaa</span>
 
         <br /><br />
-		
+
 
 
         <label class="form_col" for="login">Nom d'utilisateur :</label>
@@ -50,7 +64,7 @@
         <input name="pwd1" id="pwd1" type="password" />
 
         <span class="tooltip">Le mot de passe ne doit pas faire moins de 6 caractères</span>
-		
+
         <br /><br />
 
         <label class="form_col" for="pwd2">Mot de passe (confirmation) :</label>
@@ -71,6 +85,6 @@
 
         <input type="submit" value="M'inscrire" /> <input type="reset" value="Réinitialiser le formulaire" />
     </form>
-	
+
 </body>
 </html>
