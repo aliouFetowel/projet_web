@@ -22,103 +22,113 @@ header {
 }
 */
 
-/* slideshow */
-#slideshow{
+/*slideshow*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
-  width: 640px;
-  height: 310px;
-  padding: 15px;
-  margin: 0 auto 2 em;
-  border: 1 px solid #ddd;
-  background: #fff;
-  /* css3 effects */
-  background: linear-gradient(#fff, #fff 20%, #eee 80%, #ddd);
-  border-radius: 2px 2px 2px 2px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  margin: auto;
 }
 
-/* avanced box-shadow*/
+.mySlides {
+    display: none;
+}
 
-#slideshow:before,
-#slideshow:after {
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  bottom: 16px;
-  z-index: -10;
-  width: 50%;
-  height: 20px;
-  content: " ";
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  box-shadow:  0 0 3px rgba(0, 0, 0, 0.4), 0 20px 10px rgba(0, 0, 0, 0.7);
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
-#slideshow:before{
-  left: 0;
-  transform: rotate(-4deg);
-}
-#slideshow:after{
+
+/* Position the "next button" to the right */
+.next {
   right: 0;
-  transform: rotate(4deg);
+  border-radius: 3px 0 0 3px;
 }
 
-/*gestion des dimensions et débordement du conteneur */
-#slideshow .container {
-  position: relative;
-  width: 640px;
-  height: 310px;
-  overflow: hidden;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-/* on prévoit un petit espace gris pour la timeline */
-
-#slideshow .container:after{
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
   position: absolute;
-  bottom: 0; left: 0;
-  content: " ";
+  bottom: 8px;
   width: 100%;
-  height: 1px;
-  background: #999;
+  text-align: center;
 }
-/*
-  le conteneur des slides
-  en largeur il fait 100% x le nombre de slideshow
-*/
 
-#slideshow .slider {
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
   position: absolute;
-  left: 0; top: 0;
-  width: 400%;
-  height: 310px;
+  top: 0;
 }
 
-/* annulation des marges sur figure */
-#slideshow figure {
-  position: relative;
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
   display: inline-block;
-  padding: 0; margin: 0;
+  transition: background-color 0.6s ease;
 }
 
-/* petit effet de vignette sur les images */
-#slideshow figure:after{
-  position: absolute;
-  display: block;
-  content: " ";
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  box-shadow: 0 0 65px rgba(0, 0, 0, 0.5) inset;
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 
-/* auteur */
+/* autre */
 
-img{
-  width: 80%;
-  height: 60%;
+div > img{
+  width: 100%;
+  height: 30%;
   display:inline-block;
 	position: center;
 	margin-top: 20px;
 }
 .corps {
-	width: 80%;
+	width: 90%;
 	margin: auto;
   display: flex;
   flex-flow: row wrap;

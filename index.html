@@ -23,40 +23,52 @@
 				</nav>
 		</header>
 
+		<div class="slideshow-container">
+ <div class="mySlides fade">
+	 <div class="numbertext">1 / 5</div>
+	 <img src="imag1.jpg">
+	 <div class="text">Caption Text</div>
+ </div>
+
+ <div class="mySlides fade">
+	 <div class="numbertext">2 / 5</div>
+	 <img src="imag2.jpg">
+	 <div class="text">Caption Two</div>
+ </div>
+
+ <div class="mySlides fade">
+	 <div class="numbertext">3 / 5</div>
+	 <img src="imag3.jpg">
+	 <div class="text">Caption Three</div>
+ </div>
+
+ <div class="mySlides fade">
+	<div class="numbertext">4 / 5</div>
+	<img src="imag4.jpg">
+	<div class="text">Caption four</div>
+ </div>
+
+ <div class="mySlides fade">
+	<div class="numbertext">5 / 5</div>
+	<img src="imag5.jpg">
+	<div class="text">Caption five</div>
+ </div>
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+ <span class="dot" onclick="currentSlide(1)"></span>
+ <span class="dot" onclick="currentSlide(2)"></span>
+ <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span>
+ <span class="dot" onclick="currentSlide(5)"></span>
+
+</div>
+
+
 		<section>
-			<span id="sl_play" class="sl_command"></span>
-			<span id="sl_pause" class="sl_command"></span>
-
-			<span id="sl_i1" class="sl_command sl_i"></span>
-			<span id="sl_i2" class="sl_command sl_i"></span>
-			<span id="sl_i3" class="sl_command sl_i"></span>
-			<span id="sl_i4" class="sl_command sl_i"></span>
-			<span id="sl_i5" class="sl_command sl_i"></span>
-			<a class="play_commands pause" href="#sl_pause" title="Maintain paused">pause</a>
-			<a class="play_commands play" href="#sl_play" title="Play the animation">play</a>
-
-			<article id="slideshow">
-				<div class="container">
-					<div class="slider">
-						<figure>
-							<img src="imag1.jpg" alt="" width="640" height="310" />
-						</figure>
-						<figure>
-							<img src="imag2.jpg" alt="" width="640" height="310" />
-						</figure>
-						<figure>
-							<img src="imag3.jpg" alt="" width="640" height="310" />
-						</figure>
-						<figure>
-							<img src="imag4.jpg" alt="" width="640" height="310" />
-						</figure>
-						<figure>
-							<img src="imag5.jpg" alt="" width="640" height="310" />
-						</figure>
-			</div>
-			</div>
-			</article>
-
 			<article class="main">
 				<!--<img src="img2.jpg" width="100%" height="100%" alt="Palm Hôtel & Spa"/>-->
 				<h1> PALM HOTEL & SPA</h1>
@@ -79,4 +91,5 @@
 		</footer>
 	</body>
 
-</html
+</html>
+<script type="text/javascript" src="index.js"></script>
