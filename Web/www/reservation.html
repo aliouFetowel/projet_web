@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Un formulaire</title>
+    	<link rel="stylesheet" href="menuPied.css" />
+</head>
+
+<body>
+  <header> <h1>Bienvenue à l'Hôtel Diallo</h1>
+    <nav>
+      <ul class="menu" role="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="hebergement.html">Hébergements</a></li>
+      <li><a href="loisirs.html">Loisirs</a></li>
+      <li><a href="promotion.html">Promotions</a></li>
+      <li><a href=#>Reservation</a></li>
+      </ul>
+      </nav>
+  </header>
+
+  <br>
+	 <form name="myForm" id="myForm" action="htbin/register.py">
+     <label class="form_col" for="lastName">Nom :</label>
+     <input name="lastName" id="lastName" type="text" />
+     <span class="tooltip">ce champ est obligatoire</span>
+     <br /><br />
+
+     <label class="form_col" for="firstName">Prénom :</label>
+     <input name="firstName" id="firstName" type="text" />
+     <span class="tooltip">ce champ est obligatoire</span>
+     <br /><br />
+
+     <label class="form_col" for="dateNaissance">Date de Naissance:</label>
+     <input name="dateNaissance" id="dateNaissance" type="date" />
+     <span class="tooltip">Format de la date de naissance jj/mm/aaaa</span>
+     <br /><br />
+
+     <label class="form_col" for="login">Nom d'utilisateur :</label>
+     <input name="login" id="login" type="text" />
+     <span class="tooltip">au moins 6 caracteres</span>
+     <br /><br />
+
+     <label class="form_col" for="pwd1">Mot de passe :</label>
+     <input name="pwd1" id="pwd1" type="password" />
+     <span class="tooltip">au moins 8 caracteres (majuscule, minuscule et chiffre)</span>
+     <br /><br />
+
+     <label class="form_col" for="pwd2"> confirmation :</label>
+     <input name="pwd2" id="pwd2" type="password" />
+     <span class="tooltip">mot de passe different</span>
+     <br /><br />
+
+     <label class="form_col" for="firstName">e-mail :</label>
+     <input name="useremail" id="useremail" type="text" />
+     <span class="tooltip">ce champ est obligatoire</span>
+     <br /><br />
+
+    <input id="submit" type="submit" value="M'inscrire"  /> <input type="reset" value="Réinitialiser le formulaire" />
+    </form>
+    <footer class="footer">
+      Diallo Djenabou Cellou <img src="djenabou.jpg" alt="djenabou"/><br>
+      Diallo Abdoul Gadiri <img src="gadiri.jpg" alt="gadiri"/><br><br>
+      <strong> L2 informatique</strong>
+    </footer>
+
+</body>
+</html>
+<script type="text/javascript" src="reservation.js"></script>
