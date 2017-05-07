@@ -1,27 +1,4 @@
 //griser avant remplissage complet du formulaire
-//document.getElementById('submit').disabled = 'true';
-
-
-/*function griser(){
-  if(compteur >= 7){
-    document.getElementById('submit').disabled = false;
-  }
-  else {
-    document.getElementById('submit').disabled = true;
-  }
-};*/
-/*
-function griser(){
-  var form = document.form['myForm'];
-  var cpt=0;
-  for(var i = 0; i<form.length;i++){
-    if (form.elements[i].className === 'correct'){
-      cpt++;
-    }
-  }
-  alert(cpt);
-}
-*/
   // Fonction de désactivation de l'affichage des "tooltips
 function deactivateTooltips() {
     var tooltips = document.querySelectorAll('.tooltip'),
@@ -59,21 +36,7 @@ function deactivateTooltips() {
   };
 
   check['firstName'] = check['lastName'];
-  // La fonction pour le prénom est la même que celle du nom
-  /*check['age'] = function() {
-    var age = document.getElementById('age'),
-    tooltipStyle = getTooltip(age).style,
-    ageValue = parseInt(age.value);
-    if (!isNaN(ageValue) && ageValue >= 5 && ageValue <= 140) {
-      age.className = 'correct';
-      tooltipStyle.display = 'none';
-      return true;
-    } else {
-      age.className = 'incorrect';
-      tooltipStyle.display = 'inline-block';
-      return false;
-    }
-  };*/
+
   check['login'] = function() {
     var login = document.getElementById('login'),
     tooltipStyle = getTooltip(login).style;
@@ -129,10 +92,18 @@ function deactivateTooltips() {
       return false;
     }
   };
+  function griser(){
+    var result = true;
+    for (var i in check) {
+      result = check[i](i) && result;
+    }
+    if(result){
+      document.getElementById('submit').disabled = false;
+    }
+  }
 
-griser(){
-  
-}
+
+document.getElementById('submit').disabled = true;
   // Mise en place des événements
   (function() { // Utilisation d'une IIFE pour éviter les variables globales.
   var myForm = document.getElementById('myForm'),
@@ -142,19 +113,22 @@ griser(){
     inputs[i].addEventListener('keyup', function(e) {
       check[e.target.id](e.target.id); // "e.target" représente l'input
       // actuellement modifié
+      griser();
     });
   }
+
   myForm.addEventListener('submit', function(e) {
     var result = true;
     for (var i in check) {
       result = check[i](i) && result;
     }
     if (result) {
-      alert('Le formulaire est bien rempli.');
+      //alert('Le formulaire est bien rempli.');
+      var script = document.getElementById("myForm").action;
+      window[script]();
     }
     e.preventDefault();
   });
-
   myForm.addEventListener('reset', function() {
     for (var i = 0 ; i < inputsLength; i++) {
       inputs[i].className = '';
