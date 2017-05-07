@@ -100,7 +100,7 @@ li::after{
 
 /* écrans moyens */
 
-@@media  (max-width: 800px) {
+@media  (max-width: 800px) {
   .menu{
     justify-content: center;  /* 4 */
   }
@@ -108,7 +108,7 @@ li::after{
 
 /* petits écrans */
 
-@@media (max-width: 450px) {
+@media (max-width: 450px) {
   .menu{
     flex-flow: column wrap;   /* 5 */
   }
