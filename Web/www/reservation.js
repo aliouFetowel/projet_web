@@ -21,7 +21,7 @@ function deactivateTooltips() {
   // Fonctions de vérification du formulaire, elles renvoient "true" si
   // tout est ok
   var check = {}; // On met toutes nos fonctions dans un objet littéral
-  check['lastName'] = function(id) {
+  check['lastname'] = function(id) {
     var name = document.getElementById(id),
     tooltipStyle = getTooltip(name).style;
     if (name.value.length > 0) {
@@ -35,10 +35,10 @@ function deactivateTooltips() {
     }
   };
 
-  check['firstName'] = check['lastName'];
+  check['firstname'] = check['lastname'];
 
-  check['login'] = function() {
-    var login = document.getElementById('login'),
+  check['username'] = function() {
+    var login = document.getElementById('username'),
     tooltipStyle = getTooltip(login).style;
     if (login.value.length >= 6) {
       login.className = 'correct';
@@ -51,8 +51,8 @@ function deactivateTooltips() {
     }
   };
 
-  check['pwd1'] = function() {
-    var pwd1 = document.getElementById('pwd1'),
+  check['userpwd'] = function() {
+    var pwd1 = document.getElementById('userpwd'),
     tooltipStyle = getTooltip(pwd1).style;
     var RegExp = /^[A-Z]+.*[a-z]+.*[0-9]+.*/;
     if (pwd1.value.length >= 8 && RegExp.test(pwd1.value)) {
@@ -65,9 +65,9 @@ function deactivateTooltips() {
       return false;
     }
   };
-  check['pwd2'] = function() {
-    var pwd1 = document.getElementById('pwd1'),
-    pwd2 = document.getElementById('pwd2'),
+  check['userpwd2'] = function() {
+    var pwd1 = document.getElementById('userpwd'),
+    pwd2 = document.getElementById('userpwd2'),
     tooltipStyle = getTooltip(pwd2).style;
 
     if (pwd1.value == pwd2.value && pwd2.value != '') {

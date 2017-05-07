@@ -1,24 +1,24 @@
 /*body{
-	background:url(imc2.jpg);
+background:url(imc2.jpg);
 }
 .corps{
-	background:white;
-	width:70%;
-	position:relative;
-	margin:auto;
+background:white;
+width:70%;
+position:relative;
+margin:auto;
 }
 article{
-	position:relative;
-	width:80%;
+position:relative;
+width:80%;
 }
 img{
-  width: 70%;
-  height: 60%;
-  display:inline-block;
+width: 70%;
+height: 60%;
+display:inline-block;
 }
 
 header {
-    position:static;
+position:static;
 }
 */
 
@@ -34,7 +34,7 @@ header {
 }
 
 .mySlides {
-    display: none;
+  display: none;
 }
 
 /* Next & previous buttons */
@@ -124,12 +124,12 @@ div > img{
   width: 100%;
   height: 30%;
   display:inline-block;
-	position: center;
-	margin-top: 20px;
+  position: center;
+  margin-top: 20px;
 }
 .corps {
-	width: 90%;
-	margin: auto;
+  width: 90%;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
 }
@@ -150,15 +150,15 @@ div > img{
   }
 
   /*.aside{
-    order: 1;
-  }
-	*/
+  order: 1;
+}
+*/
 
-  .main {
-    order: 1
-  }
+.main {
+  order: 1
+}
 
-  .footer{
-    order: 2;
-  }
+.footer{
+  order: 2;
+}
 }
