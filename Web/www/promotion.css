@@ -1,13 +1,3 @@
-table, td, th {
-  border: 1px solid gray
-}
-.tableau{
-  background-color: rgba(120, 99, 128, 0.5);
-  margin-bottom: 2em;
-}
-.entete{
-  color:black;
-}
 .corps {
   width: 80%;
   margin: auto;

@@ -1,4 +1,4 @@
-body {
+.body {
 
     padding-top: 50px;
 
@@ -81,4 +81,105 @@ input:focus {
     border: 1px solid #555;
     background-color: #CCC;
     border-radius: 4px;
+}
+
+.submit{
+  margin-left: 15em;
+  margin-bottom: 2em;
+  margin-right: 1em;
+}
+
+
+
+.corps {
+  width: 80%;
+  margin: auto;
+  /*display: flex;*/
+  flex-flow: row wrap;
+}
+
+.corps > *{
+  flex: 70%;
+}
+
+@media (min-width: 600px){
+  .aside {
+    flex: 1 auto;
+  }
+}
+
+@media (min-width:80%){
+  .main{
+    flex: 1 0px;
+  }
+
+  /*.aside{
+  order: 1;
+}
+*/
+
+.main {
+  order: 1
+}
+
+.footer{
+  order: 2;
+}
+}
+
+/* 3D transform */
+
+#lastname{
+  transition-duration: 0.8s;
+}
+
+#lastname:hover{
+  transform: rotateZ(3deg);
+}
+
+#firstname{
+  transition-duration: 0.8s;
+}
+#firstname:hover{
+  transform: rotateZ(-3deg);
+}
+
+#birthdate{
+  transition-duration: 0.8s;
+}
+
+#birthdate:hover{
+  transform: rotateZ(2deg);
+}
+
+#username{
+  transition-duration: 0.8s;
+}
+
+#username:hover{
+  transform: rotateZ(-3deg);
+}
+
+#userpwd{
+  transition-duration: 0.8s;
+}
+
+#userpwd:hover{
+  transform: rotateZ(3deg);
+}
+
+#userpwd2{
+  transition-duration: 0.8s;
+}
+
+#userpwd2:hover{
+  transform: rotateZ(-3deg);
+}
+
+#useremail{
+  transition-duration: 0.8s;
+}
+
+#useremail:hover{
+  transform: rotateZ(3deg);
 }

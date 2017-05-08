@@ -128,7 +128,7 @@ div > img{
   margin-top: 20px;
 }
 .corps {
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-flow: row wrap;

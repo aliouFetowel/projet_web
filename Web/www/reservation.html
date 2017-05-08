@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Un formulaire</title>
+    <link rel="stylesheet" media="all" href="base.css" />
     	<link rel="stylesheet" href="menuPied.css" />
+      <link rel="stylesheet" href="reservation.css" />
 </head>
 
-<body>
+<body class="corps">
   <header> <h1>Bienvenue à l'Hôtel Diallo</h1>
     <nav>
       <ul class="menu" role="menu">
@@ -20,7 +22,7 @@
   </header>
 
   <br>
-	 <form name="myForm" id="myForm" action="htbin/register.py">
+	 <form class="corps" name="myForm" id="myForm" action="htbin/register.py">
      <label class="form_col" for="lastname">Nom :</label>
      <input name="lastname" id="lastname" type="text" />
      <span class="tooltip">ce champ est obligatoire</span>
@@ -56,7 +58,7 @@
      <span class="tooltip">ce champ est obligatoire</span>
      <br /><br />
 
-    <input id="submit" type="submit" value="M'inscrire"  />
+    <input class="submit" id="submit" type="submit" value="M'inscrire"  />
     <input type="reset" value="Réinitialiser le formulaire" />
     </form>
     <footer class="footer">
