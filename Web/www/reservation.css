@@ -1,7 +1,6 @@
 .body {
 
     padding-top: 50px;
-
 }
 
 
@@ -91,12 +90,18 @@ input:focus {
 
 
 
+
 .corps {
   width: 80%;
   margin: auto;
   /*display: flex;*/
   flex-flow: row wrap;
+  background-image: url("fond.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
 
 .corps > *{
   flex: 70%;
