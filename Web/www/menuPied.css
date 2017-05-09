@@ -130,3 +130,18 @@ li::after{
     width: 5%;
     height: 30%;
  }
+
+ a {
+   text-decoration: none;
+ }
+
+ a:hover{
+   color: white;
+ }
+ a:active{
+   color: rgba(227, 204, 183, 1);
+ }
+
+ a:visited{
+   color: blue;
+ }

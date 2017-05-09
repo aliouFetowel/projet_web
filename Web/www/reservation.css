@@ -99,7 +99,7 @@ input:focus {
   background-image: url("fond.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover;
 }
 
 
