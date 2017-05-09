@@ -1,3 +1,38 @@
-video{
-  padding-left: 10%;
+
+.corps {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.corps > *{
+  flex: 80%;
+}
+
+@media (min-width: 600px){
+  .aside {
+    flex: 1 auto;
+  }
+}
+
+@media (min-width:800px){
+  .main{
+    flex: 1 0px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  /*.aside{
+  order: 1;
+}
+*/
+
+.main {
+  order: 1
+}
+
+.footer{
+  order: 2;
+}
 }
