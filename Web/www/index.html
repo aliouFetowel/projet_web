@@ -8,7 +8,7 @@
 	<title>Accueil Hotel</title>
 </head>
 
-<body class="corps">
+<body class="corps" onload="chargement()">
 	<header class="header"> <h1>Bienvenue à l'Hôtel Diallo</h1>
 		<nav>
 			<ul class="menu" role="menu">
@@ -60,6 +60,7 @@
 	</div>
 
 	<h1><b>PALM HOTEL & SPA</b></h1>
+		<span id="avertissement">ce site utilise javascript <button onclick="disparait()">OK</button></span>
 	<section>
 		<h2><b>presentation</b></h2>
 		<section class="main">
@@ -76,6 +77,9 @@
 				<h3><a href="videos.html">Presentation de l'Hotel</a></h3>
 			</section>
 		</section>
+		<noscript>
+			javascritp n'est pas activé
+		</noscript>
 
 		<footer class="footer">
 			Diallo Djenabou Cellou <img src="djenabou.jpg" alt="djenabou"/><br>

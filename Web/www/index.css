@@ -162,3 +162,14 @@ div > img{
   order: 2;
 }
 }
+
+#avertissement{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: blue;
+}
+
+button{
+  text-decoration: none;
+}

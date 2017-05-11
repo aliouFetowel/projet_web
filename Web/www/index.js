@@ -1,4 +1,5 @@
 var slideIndex = 1;
+var charge=0;
 //showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -39,4 +40,14 @@ function carousel() {
   if (myIndex > x.length) {myIndex = 1}
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 6000); // Change image every 2 seconds
+}
+
+function chargement(){
+  charge+=1;
+}
+
+function disparait(){
+  if(charge==1){
+  document.getElementById("avertissement").style.display = 'none';
+}
 }
