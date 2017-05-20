@@ -17,7 +17,7 @@
 
 @media (min-width:800px){
   .main{
-    flex: 20 0px;
+    flex: 1 0px;
   }
 
   .aside{
@@ -28,9 +28,9 @@
     order: 2;
   }
 
-  .footer{
+  /*.footer{
     order: 3;
-  }
+  }*/sss
 }
 .heb{
   padding: 1em;

@@ -8,7 +8,7 @@
 	<title>Accueil Hotel</title>
 </head>
 
-<body class="corps" onload="chargement()">
+<body class="corps">
 	<header class="header"> <h1>Bienvenue à l'Hôtel Diallo</h1>
 		<nav>
 			<ul class="menu" role="menu">
@@ -20,6 +20,20 @@
 			</ul>
 		</nav>
 	</header>
+
+	<span class="connexion">
+		<button	onclick="afficheF()">Connexion</button>
+	</span>
+
+	<div id="form" >
+	<form id="connexion" method="POST" action="">
+		<input type="text" name="username" id="username"><br><br>
+		<input type="password" name="userpwd"  id="userpwd"><br><br>
+		<input type="button" value="valider" onclick="loadFile()"><br>
+	</form>
+</div>
+
+	<span id="message"></span>
 
 	<div class="slideshow-container">
 		<div class="mySlides fade">

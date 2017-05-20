@@ -42,12 +42,38 @@ function carousel() {
   setTimeout(carousel, 6000); // Change image every 2 seconds
 }
 
-function chargement(){
-  charge+=1;
-}
 
 function disparait(){
-  if(charge==1){
   document.getElementById("avertissement").style.display = 'none';
 }
+
+
+//partie Ajax
+function afficheF(){
+  document.getElementById("form").style.display = 'block';
+}
+
+
+function loadFile() {
+
+    var xhr = new XMLHttpRequest();
+    var sVar1 = encodeURIComponent(document.getElementById("username").value);
+    var sVar2 = encodeURIComponent(document.getElementById("userpwd").value);
+
+    // On souhaite juste récupérer le contenu du fichier, la méthode GET suffit amplement
+
+    xhr.addEventListener('readystatechange', function() { // On gère ici une requête asynchrone
+
+        if (xhr.readyState == 4 && xhr.status == 200) { // Si le fichier est chargé sans erreur
+            document.getElementById("message").innerHTML = '<span>' + xhr.responseText + '</span>'; // Et on affiche !
+
+        }
+        else {
+          document.getElementById("message").innerHTML = '<span>' + xhr.responseText + '</span>';
+        }
+    });
+    xhr.open("GET", "htbin/login.py?username="+sVar1+"&userpwd=" + sVar2);
+
+    xhr.send(null); // La requête est prête, on envoie tout !
+
 }

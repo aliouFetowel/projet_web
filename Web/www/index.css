@@ -173,3 +173,21 @@ div > img{
 button{
   text-decoration: none;
 }
+
+.connexion{
+  color: blue;
+}
+
+#form{
+  display: none;
+  margin-top: 2em;
+}
+
+#message{
+  position: absolute;
+  color: red;
+  top: 13%;
+  right: 30%;
+  font-size: 30px;
+  font-family: sans-serif;
+}
