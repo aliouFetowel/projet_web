@@ -19,8 +19,7 @@ $(function() {
         i++;
       }
     });
-    $('#message').val('');
+    $('#msg').val('');
+    $('#msg').focus();
   }
-
-  setInterval(afficheConversation, 8000);
 });
