@@ -16,17 +16,13 @@
   }
 }
 
-@media (min-width:800px){
+@media (min-width:8000px){
   .main{
     flex: 1 0px;
     margin-top: 1em;
     margin-bottom: 1em;
   }
 
-  /*.aside{
-  order: 1;
-}
-*/
 
 .main {
   order: 1
@@ -35,4 +31,9 @@
 .footer{
   order: 2;
 }
+}
+
+video{
+  width: 80%;
+  height: 50%;
 }

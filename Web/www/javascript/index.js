@@ -1,6 +1,5 @@
 var slideIndex = 1;
 var charge=0;
-//showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -39,7 +38,7 @@ function carousel() {
   currentSlide(myIndex);
   if (myIndex > x.length) {myIndex = 1}
   x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 6000); // Change image every 2 seconds
+  setTimeout(carousel, 3000); // Change image chaque 3 seconds
 }
 
 
@@ -56,24 +55,24 @@ function afficheF(){
 
 function loadFile() {
 
-    var xhr = new XMLHttpRequest();
-    var sVar1 = encodeURIComponent(document.getElementById("username").value);
-    var sVar2 = encodeURIComponent(document.getElementById("userpwd").value);
+  var xhr = new XMLHttpRequest();
+  var sVar1 = encodeURIComponent(document.getElementById("username").value);
+  var sVar2 = encodeURIComponent(document.getElementById("userpwd").value);
 
-    // On souhaite juste récupérer le contenu du fichier, la méthode GET suffit amplement
+  // On souhaite juste récupérer le contenu du fichier, la méthode GET suffit amplement
 
-    xhr.addEventListener('readystatechange', function() { // On gère ici une requête asynchrone
+  xhr.addEventListener('readystatechange', function() { // On gère ici une requête asynchrone
 
-        if (xhr.readyState == 4 && xhr.status == 200) { // Si le fichier est chargé sans erreur
-            document.getElementById("message").innerHTML = '<span>' + xhr.responseText + '</span>'; // Et on affiche !
+    if (xhr.readyState == 4 && xhr.status == 200) { // Si le fichier est chargé sans erreur
+      document.getElementById("message").innerHTML = '<span>' + xhr.responseText + '</span>'; // Et on affiche !
 
-        }
-        else {
-          document.getElementById("message").innerHTML = '<span>' + xhr.responseText + '</span>';
-        }
-    });
-    xhr.open("GET", "../htbin/login.py?username="+sVar1+"&userpwd=" + sVar2);
+    }
+    else {
+      document.getElementById("message").innerHTML = '<span>' + xhr.responseText + '</span>';
+    }
+  });
+  xhr.open("GET", "../htbin/login.py?username="+sVar1+"&userpwd=" + sVar2);
 
-    xhr.send(null); // La requête est prête, on envoie tout !
+  xhr.send(null); // La requête est prête, on envoie tout !
 
 }

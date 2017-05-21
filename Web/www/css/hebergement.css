@@ -10,16 +10,15 @@
 }
 
 @media (min-width: 600px){
-  .aside {
+  .main{
     flex: 1 auto;
   }
 }
 
-@media (min-width:800px){
+@media (min-width:8000px){
   .main{
-    flex: 1 0px;
+    flex: 1 auto;
   }
-
   .aside{
     order: 1;
   }
@@ -29,7 +28,7 @@
   }
 
   .footer{
-    order: 3;
+    order: 2;
   }
 }
 .heb{

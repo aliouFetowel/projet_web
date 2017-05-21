@@ -1,4 +1,4 @@
-//griser avant remplissage complet du formulaire
+
 // Fonction de désactivation de l'affichage des "tooltips
 function deactivateTooltips() {
   var tooltips = document.querySelectorAll('.tooltip'),
@@ -92,6 +92,8 @@ check['useremail'] = function() {
     return false;
   }
 };
+
+//rend le bouton submit cliquable
 function griser(){
   var result = true;
   for (var i in check) {
@@ -101,8 +103,9 @@ function griser(){
     document.getElementById('submit').disabled = false;
   }
 }
-  
 
+
+//grise le bouton submit
 document.getElementById('submit').disabled = true;
 // Mise en place des événements
 (function() { // Utilisation d'une IIFE pour éviter les variables globales.
@@ -123,7 +126,6 @@ myForm.addEventListener('submit', function(e) {
     result = check[i](i) && result;
   }
   if (result) {
-    //alert('Le formulaire est bien rempli.');
     var script = document.getElementById("myForm").action;
     window[script]();
   }

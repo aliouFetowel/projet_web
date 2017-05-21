@@ -15,15 +15,11 @@
   }
 }
 
-@media (min-width:80%){
+@media (min-width:8000px){
   .main{
     flex: 1 0px;
   }
 
-  /*.aside{
-  order: 1;
-}
-*/
 
 .main {
   order: 1

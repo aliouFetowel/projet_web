@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" media="all" href="../css/base.css" />
-		<link rel="stylesheet" href="../css/menuPied.css" />
-		<link rel="stylesheet" href="../css/chat.css" />
-		<meta charset="UTF-8">
-		<title>Chat</title>
-	</head>
+<head>
+	<link rel="stylesheet" media="all" href="../css/base.css" />
+	<link rel="stylesheet" href="../css/menuPied.css" />
+	<link rel="stylesheet" href="../css/chat.css" />
+	<meta charset="UTF-8">
+	<title>Chat</title>
+</head>
 
-	<body class="corps">
-		<header> <h1>Bienvenue à l'Hôtel Diallo</h1>
-			<nav>
+<body class="corps">
+	<header>
+		<nav>
 			<ul class="menu" role="menu">
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="hebergement.html">Hébergements</a></li>
-			<li><a href=#>Loisirs</a></li>
-			<li><a href="promotion.html">Promotions</a></li>
-			<li><a href="reservation.html">Reservation</a></li>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="hebergement.html">Hébergements</a></li>
+				<li><a href=#>Loisirs</a></li>
+				<li><a href="promotion.html">Promotions</a></li>
+				<li><a href="reservation.html">Reservation</a></li>
 			</ul>
-			</nav>
-		</header>
+		</nav>
+	</header>
 
-		<h1>Ici vous pouvez partager vos expériences inoubliables</h1>
-		<section class="main">
-      <fieldset>
-     <legend>Chatbox</legend>
-      <div id="conversation"></div><br />
-      <form action="" method="POST">
-        <input type="text" name="username" id="username" value="pseudo" size="8">
-        <input type="text" name="msg" id="msg" size="28"><br>
-        <input type="button" id="envoyer" title="Envoyer" value="envoyer">
-      </form>
-    </fieldset>
+
+	<section class="main">
+		<h2>Ici vous pouvez partager vos expériences inoubliables</h2>
+		<fieldset>
+			<legend>Chatbox</legend>
+			<div id="conversation"></div><br />
+			<form action="." method="POST">
+				<input type="text" name="username" id="username" value="pseudo" size="8">
+				<input type="text" name="msg" id="msg" size="28"><br>
+				<input type="button" id="envoyer" title="Envoyer" value="envoyer">
+			</form>
+		</fieldset>
 		<span id="commentaire">
 		</span>
-			</section>
-			<footer class="footer">
-				Diallo Djenabou Cellou <img src="../images/djenabou.jpg" alt="djenabou"/><br>
-				Diallo Abdoul Gadiri <img src="../images/gadiri.jpg" alt="gadiri"/><br><br>
-				<strong> L2 informatique  </strong>
-				<a href="https://twitter.com"><img src="../images/icone-twitter.png" alt="twitter"></a>
-			  <a href="https://facebook.com"><img src="../images/icone-facebook.png" alt="facebook"></a>
-			</footer>
-			<script
-  		src="https://code.jquery.com/jquery-3.2.1.min.js"
-  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  		crossorigin="anonymous"></script>
-			<script	src="../javascript/chat.js"></script>
-	</body>
+	</section>
+	<footer class="footer">
+		Diallo Djenabou Cellou <img src="../images/djenabou.jpg" alt="djenabou"/><br>
+		Diallo Abdoul Gadiri <img src="../images/gadiri.jpg" alt="gadiri"/><br><br>
+		<strong> L2 informatique  </strong>
+		<a href="https://twitter.com"><img src="../images/icone-twitter.png" alt="twitter"></a>
+		<a href="https://facebook.com"><img src="../images/icone-facebook.png" alt="facebook"></a>
+	</footer>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script	src="../javascript/chat.js"></script>
+</body>
 </html>
