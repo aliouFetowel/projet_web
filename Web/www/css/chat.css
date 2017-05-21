@@ -37,8 +37,7 @@
 #conversation {
   width: 300px;
   height: 400px;
-  border: black 1px solid;
-  background-color: #efecca;
+  background-color: rgba(142, 138, 134, 0.7);
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 5px;
@@ -46,6 +45,10 @@
 }
 fieldset {
   width: 330px;
-  background-color: #e6e2af;
-  border: black 1px solid;
+  background-color: rgba(142, 138, 134, 0.7);
+}
+
+#conversation > b{
+  color: rgba(142, 233, 150, 0.7);
+  font-size: 16px;
 }

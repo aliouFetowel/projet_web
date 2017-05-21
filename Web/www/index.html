@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<link rel="stylesheet" media="all" href="base.css" />
-	<link rel="stylesheet" href="menuPied.css" />
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" media="all" href="../css/base.css" />
+	<link rel="stylesheet" href="../css/menuPied.css" />
+	<link rel="stylesheet" href="../css/index.css" />
 	<meta charset="UTF-8">
 	<title>Accueil Hotel</title>
 </head>
@@ -26,37 +26,37 @@
 	</span>
 
 	<div id="form" >
-	<form id="connexion" method="POST" action="">
-		<input type="text" name="username" id="username"><br><br>
-		<input type="password" name="userpwd"  id="userpwd"><br><br>
-		<input type="button" value="valider" onclick="loadFile()"><br>
-	</form>
-</div>
+		<form id="connexion" method="POST" action="">
+			Login: <input type="text" name="username" id="username"><br><br>
+			Mot de passe : <input type="password" name="userpwd"  id="userpwd"><br><br>
+			<input type="button" value="valider" onclick="loadFile()"><br>
+		</form>
+	</div>
 
 	<span id="message"></span>
 
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 			<div class="numbertext">1 / 4</div>
-			<img src="imag1.jpg" alt="image 1">
+			<img src="../images/imag1.jpg" alt="image 1">
 			<div class="text">Caption Text</div>
 		</div>
 
 		<div class="mySlides fade">
 			<div class="numbertext">2 / 4</div>
-			<img src="imag2.jpg" alt="image 2">
+			<img src="../images/imag2.jpg" alt="image 2">
 			<div class="text">Caption Two</div>
 		</div>
 
 		<div class="mySlides fade">
 			<div class="numbertext">3 / 4</div>
-			<img src="imag3.jpg" alt="image 3">
+			<img src="../images/imag3.jpg" alt="image 3">
 			<div class="text">Caption Three</div>
 		</div>
 
 		<div class="mySlides fade">
 			<div class="numbertext">4 / 4</div>
-			<img src="imag4.jpg" alt="image 4">
+			<img src="../images/imag4.jpg" alt="image 4">
 			<div class="text">Caption four</div>
 		</div>
 
@@ -70,11 +70,10 @@
 		<span class="dot" onclick="currentSlide(2)"></span>
 		<span class="dot" onclick="currentSlide(3)"></span>
 		<span class="dot" onclick="currentSlide(4)"></span>
-
 	</div>
 
 	<h1><b>PALM HOTEL & SPA</b></h1>
-		<span id="avertissement">ce site utilise javascript <button onclick="disparait()">OK</button></span>
+	<span id="avertissement">ce site utilise javascript <button onclick="disparait()">OK</button></span>
 	<section>
 		<h2><b>presentation</b></h2>
 		<section class="main">
@@ -96,10 +95,12 @@
 		</noscript>
 
 		<footer class="footer">
-			Diallo Djenabou Cellou <img src="djenabou.jpg" alt="djenabou"/><br>
-			Diallo Abdoul Gadiri <img src="gadiri.jpg" alt="gadiri"/><br><br>
-			<strong> L2 informatique</strong>
+			Diallo Djenabou Cellou <img src="../images/djenabou.jpg" alt="djenabou"/><br>
+			Diallo Abdoul Gadiri <img src="../images/gadiri.jpg" alt="gadiri"/><br><br>
+			<strong> L2 informatique  </strong>
+			<a href="https://twitter.com"><img src="../images/icone-twitter.png" alt="twitter"></a>
+			<a href="https://facebook.com"><img src="../images/icone-facebook.png" alt="facebook"></a>
 		</footer>
-		<script	src="index.js"></script>
+		<script	src="../javascript/index.js"></script>
 	</body>
 	</html>

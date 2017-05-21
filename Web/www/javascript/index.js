@@ -72,7 +72,7 @@ function loadFile() {
           document.getElementById("message").innerHTML = '<span>' + xhr.responseText + '</span>';
         }
     });
-    xhr.open("GET", "htbin/login.py?username="+sVar1+"&userpwd=" + sVar2);
+    xhr.open("GET", "../htbin/login.py?username="+sVar1+"&userpwd=" + sVar2);
 
     xhr.send(null); // La requête est prête, on envoie tout !
 

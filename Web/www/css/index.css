@@ -185,9 +185,9 @@ button{
 
 #message{
   position: absolute;
-  color: red;
+  color: blue;
   top: 13%;
-  right: 30%;
+  right: 25%;
   font-size: 30px;
   font-family: sans-serif;
 }

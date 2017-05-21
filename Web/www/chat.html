@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" media="all" href="base.css" />
-		<link rel="stylesheet" href="menuPied.css" />
-		<link rel="stylesheet" href="chat.css" />
+		<link rel="stylesheet" media="all" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/menuPied.css" />
+		<link rel="stylesheet" href="../css/chat.css" />
 		<meta charset="UTF-8">
-		<title>Loisir</title>
+		<title>Chat</title>
 	</head>
 
 	<body class="corps">
@@ -24,20 +24,28 @@
 		<h1>Ici vous pouvez partager vos expériences inoubliables</h1>
 		<section class="main">
       <fieldset>
-     <legend>Un chat en jQuery</legend>
+     <legend>Chatbox</legend>
       <div id="conversation"></div><br />
-      <form action="#" method="post">
-        <input type="text" id="nom" value="pseudo" size="6">
-        <input type="text" id="message" size="27">
-        <button type="button" id="envoyer" title="Envoyer"><img src="envoyer.gif"></button>
+      <form action="" method="POST">
+        <input type="text" name="username" id="username" value="pseudo" size="8">
+        <input type="text" name="msg" id="msg" size="28"><br>
+        <input type="button" id="envoyer" title="Envoyer" value="envoyer">
       </form>
     </fieldset>
+		<span id="commentaire">
+		</span>
 			</section>
 			<footer class="footer">
-				Diallo Djenabou Cellou <img src="djenabou.jpg" alt="djenabou"/><br>
-				Diallo Abdoul Gadiri <img src="gadiri.jpg" alt="gadiri"/><br><br>
-				<strong> L2 informatique</strong>
+				Diallo Djenabou Cellou <img src="../images/djenabou.jpg" alt="djenabou"/><br>
+				Diallo Abdoul Gadiri <img src="../images/gadiri.jpg" alt="gadiri"/><br><br>
+				<strong> L2 informatique  </strong>
+				<a href="https://twitter.com"><img src="../images/icone-twitter.png" alt="twitter"></a>
+			  <a href="https://facebook.com"><img src="../images/icone-facebook.png" alt="facebook"></a>
 			</footer>
+			<script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+			<script	src="../javascript/chat.js"></script>
 	</body>
-
 </html>
